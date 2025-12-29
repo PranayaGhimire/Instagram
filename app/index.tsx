@@ -3,6 +3,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { router } from 'expo-router'
+import { imagePath } from '@/constants/imagePath'
 
 const Home = () => {
   const onNavigate= () => {
@@ -10,11 +11,11 @@ const Home = () => {
   }
   return (
     <SafeAreaView style={styles.container}>
-      <View></View>
+      <View/>
       <View style={styles.body}>
         <Text style={styles.instagramText}>Instagram</Text>
         <View style={styles.imageContainer}>
-            <Image style={styles.image} source={require("@/assets/images/Oval.png")} resizeMode='cover'/>
+            <Image style={styles.image} source={imagePath.icon} resizeMode='cover'/>
             <Text style={{fontWeight:"500"}}>jacob_w</Text>
             <TouchableOpacity style={styles.btn} onPress={onNavigate} activeOpacity={0.8}>
                 <Text style={styles.btnText}>Log In</Text>

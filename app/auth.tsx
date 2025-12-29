@@ -46,7 +46,7 @@ const Auth = () => {
           <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
             <Text style={{ color: "#3797EF" }}>Forgot password?</Text>
           </View>
-          <TouchableOpacity activeOpacity={0.8} onPress={() => router.push("/main")}
+          <TouchableOpacity activeOpacity={0.8} onPress={() => router.push("/(main)")}
             style={{
               backgroundColor: "#3797EF",
               width: 343,

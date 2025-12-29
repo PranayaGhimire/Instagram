@@ -2,14 +2,14 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
-const Main = () => {
+const Likes = () => {
   return (
     <SafeAreaView>
-      <Text>Main</Text>
+      <Text>Likes</Text>
     </SafeAreaView>
   )
 }
 
-export default Main
+export default Likes
 
 const styles = StyleSheet.create({})
